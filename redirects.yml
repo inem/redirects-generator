@@ -1,3 +1,4 @@
-railshurts: http://railshurts.com
-ru:         http://nemytchenko.ru
-leanpoker:  http://leanpoker.org
+redirects:
+  railshurts: http://railshurts.com
+  ru:         http://nemytchenko.ru
+  leanpoker:  http://leanpoker.org
