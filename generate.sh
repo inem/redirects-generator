@@ -1,18 +1,18 @@
 #!/bin/bash
 
 path=build
+template='<html><head><meta http-equiv="refresh" content="0;url=REPLACE_ME" /></head></html>'
 
+rm -f ./build/*
 mkdir -p $path
 
 cat redirects.yml | while read line
 do
   contents=(${line//: / })
   url=${contents[1]}
-  if [ "$url" ]; then
-    file_path=$path/${contents[0]}.html
+  file_path=$path/${contents[0]}.html
 
-    cp template.html "$file_path"
-    sed -i -e 's#REPLACE_ME#'"$url"'#g' $file_path
-    rm $file_path-e
+  if [ "$url" ]; then
+    echo ${template/REPLACE_ME/$url} > $file_path
   fi;
 done
