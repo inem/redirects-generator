@@ -2,12 +2,13 @@
 Generates html-based redirecting stubs from yaml config
 
 # Usage
-Make sure `redirects.yml` exist
-Then:
+1. Make sure `redirects.yml` exist
+2. Then:
 ```
 chmod +x generate.sh
 generate.sh
 ```
+3. Copy the contents of `build` directory to your hosting service
 
 # Ideas:
 - [x] Generate static files
