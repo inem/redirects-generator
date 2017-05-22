@@ -6,7 +6,7 @@ Generates html-based redirecting stubs from yaml config
 2. Then:
 ```
 chmod +x generate.sh
-generate.sh
+./generate.sh
 ```
 3. Copy the contents of `build` directory to your hosting service
 
