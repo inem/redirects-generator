@@ -1,4 +1,7 @@
 #!/bin/bash
+set -e
+set -o pipefail
+# set -x
 
 path=build
 template='<html><head><meta http-equiv="refresh" content="0;url=REPLACE_ME" /></head></html>'
