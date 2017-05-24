@@ -3,7 +3,7 @@ set -e
 set -o pipefail
 # set -x
 
-# aws command expects you to provide AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY envronmen variables
+# `aws` command expects you to provide AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY envronmen variables
 
 touch zero
 
